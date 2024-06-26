@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     form.addEventListener('submit', function (e) {
         e.preventDefault();
-
+// Novo 
         // Validação básica
         let name = document.getElementById('name').value;
         let email = document.getElementById('email').value;
