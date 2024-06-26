@@ -280,7 +280,7 @@ header h1::after {
 #pricing h2::after {
     content: " 💰";
 }
-#about
+
 #about h2::after {
     content: " 👥";
 }
