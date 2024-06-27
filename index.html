@@ -23,7 +23,7 @@
         </div>
     </header>
 
-    <section id="home" class="hero-section scroll-element">
+    <section id="home" class="hero-section">
         <div class="container">
             <h2>Bem-vindo ao GuestManagerBot</h2>
             <p>Automatize e melhore a experiência dos seus hóspedes com nossas soluções de chatbot alimentadas por IA.</p>
@@ -31,7 +31,7 @@
         </div>
     </section>
 
-    <section id="features" class="scroll-element">
+    <section id="features">
         <div class="container">
             <h2>Funcionalidades</h2>
             <div class="feature-card">
@@ -55,35 +55,38 @@
         </div>
     </section>
 
-    <section id="pricing" class="scroll-element">
+    <section id="pricing">
         <div class="container">
             <h2>Preços</h2>
             <div class="pricing-container">
                 <div class="pricing-card" id="plan-basic">
-                    <div class="pricing-header"></div>
-                    <h3>Básico</h3>
+                    <div class="card-header">
+                        <h3>Básico</h3>
+                    </div>
                     <p>Funcionalidades básicas, poucas personalizações e um idioma.</p>
-                    <p><strong>€99</strong> por mês</p>
+                    <p class="price"><strong>€99</strong> por mês</p>
                     <select onchange="updatePrice('basic', this.value)">
                         <option value="monthly">Mensal</option>
                         <option value="annual">Anual (€990)</option>
                     </select>
                 </div>
-                <div class="pricing-card selected" id="plan-intermediate">
-                    <div class="pricing-header"></div>
-                    <h3>Intermediário</h3>
+                <div class="pricing-card destaque" id="plan-intermediate">
+                    <div class="card-header">
+                        <h3>Intermediário</h3>
+                    </div>
                     <p>Mais funcionalidades, personalização e três idiomas.</p>
-                    <p><strong>€139</strong> por mês</p>
+                    <p class="price"><strong>€139</strong> por mês</p>
                     <select onchange="updatePrice('intermediate', this.value)">
                         <option value="monthly">Mensal</option>
                         <option value="annual">Anual (€1500)</option>
                     </select>
                 </div>
                 <div class="pricing-card" id="plan-advanced">
-                    <div class="pricing-header"></div>
-                    <h3>Avançado</h3>
+                    <div class="card-header">
+                        <h3>Avançado</h3>
+                    </div>
                     <p>Automação interna para funcionários, todas as funcionalidades avançadas e multilinguagem.</p>
-                    <p><strong>€169</strong> por mês</p>
+                    <p class="price"><strong>€169</strong> por mês</p>
                     <select onchange="updatePrice('advanced', this.value)">
                         <option value="monthly">Mensal</option>
                         <option value="annual">Anual (€1800)</option>
@@ -93,7 +96,7 @@
         </div>
     </section>
 
-    <section id="about" class="scroll-element">
+    <section id="about">
         <div class="container">
             <h2>Sobre Nós</h2>
             <p>Saiba mais sobre a nossa missão e nossa equipe.</p>
@@ -106,23 +109,36 @@
         </div>
     </section>
 
-    <section id="contact" class="scroll-element">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco para saber mais.</p>
-            <form id="contact-form">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
+    <section id="contact">
+        <div class="container contact-content">
+            <div class="contact-form-container">
+                <h2>Contato</h2>
+                <form id="contact-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" required></textarea>
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
 
-                <button type="submit">Enviar</button>
-            </form>
-            <div id="form-messages"></div>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="form-messages"></div>
+            </div>
+            <div class="social-media">
+                <h2>Redes Sociais</h2>
+                <div class="icons">
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="whatsapp-button">
+            <a href="https://wa.me/numero" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
         </div>
     </section>
 

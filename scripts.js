@@ -65,8 +65,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const planDetailsText = document.getElementById('plan-details-text');
 
     function updatePrice(plan, type) {
-        const priceElement = document.querySelector(`#plan-${plan} p strong`);
-        const detailsElement = document.querySelector(`#plan-${plan} p + p`);
+        const priceElement = document.querySelector(`#plan-${plan} .price strong`);
+        const detailsElement = document.querySelector(`#plan-${plan} .price + p`);
 
         switch (plan) {
             case 'basic':
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     pricingCards.forEach(card => {
-        card.addEventListener('click', () => {
+        card.addEventListener('mouseover', () => {
             pricingCards.forEach(card => card.classList.remove('selected'));
             card.classList.add('selected');
 
@@ -124,5 +124,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Definir plano intermediário como selecionado por padrão
-    document.getElementById('plan-intermediate').click();
+    document.getElementById('plan-intermediate').classList.add('selected');
 });
